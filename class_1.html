@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>
+        My First Website
+    </title>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my Web Page!</h1>
+    <h2>This is a paragraph of text.</h2>
+    <button id="colorButton">Change Color</button>
+    <p id="message">Original message</p>
+
+
+</body>
+
+<script>
+    var message = "Hello, world!";
+    var colorButton = document.querySelector('#colorButton');
+    var messageParagraph = document.querySelector('#message');
+  
+    function changeColor() {
+      messageParagraph.style.color = 'blue';
+    }
+  
+    function updateMessage() {
+      messageParagraph.textContent = message;
+    }
+  
+    colorButton.addEventListener('click', function() {
+      changeColor();
+      updateMessage();
+    });
+  </script>
+  
+  
+  
+</html>
